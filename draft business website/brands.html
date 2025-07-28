@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Brands | Mercury Pharmacy</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+</head>
+<body class="bg-white">
+
+<!-- Navbar -->
+<nav class="bg-red-700 text-white px-4 py-3 shadow-md">
+  <div class="flex items-center justify-between max-w-7.5xl">
+
+    <!-- Logo moved fully to the left -->
+    <div class="flex-shrink-0 bg-white rounded w-36 h-16 flex items-center justify-center">
+      <img src="nextgen.png" alt="Mercury Drug Logo" class="h-20 w-auto" />
+    </div>
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex items-center space-x-6 font-medium relative">
+      <li><a href="index.html" class="hover:text-red-300 transition">Home</a></li>
+
+      <!-- Dropdown -->
+      <li class="relative group">
+        <button id="medicine-toggle" class="hover:text-red-300 transition flex items-center">
+          Medicine Types
+          <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <ul id="medicine-dropdown" class="absolute top-full left-0 mt-2 w-48 bg-white text-red-700 rounded-md shadow-md hidden group-hover:block z-10">
+          <li><a href="tablet.html" class="block px-4 py-2 hover:bg-gray-100">Tablet</a></li>
+          <li><a href="capsule.html" class="block px-4 py-2 hover:bg-gray-100">Capsule</a></li>
+          <li><a href="syrup.html" class="block px-4 py-2 hover:bg-gray-100">Syrup / Fluid</a></li>
+          <li><a href="ointment.html" class="block px-4 py-2 hover:bg-gray-100">Cream / Ointment</a></li>
+          <li><a href="vitamins.html" class="block px-4 py-2 hover:bg-gray-100">Vitamins</a></li>
+        </ul>
+      </li>
+
+      <li><a href="brands.html" class="hover:text-red-300 transition">Brands</a></li>
+      <li><a href="contact.html" class="hover:text-red-300 transition">Contact</a></li>
+    </ul>
+
+    <!-- Mobile Menu Toggle -->
+    <div class="md:hidden">
+      <button id="menu-toggle" class="focus:outline-none">
+        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="md:hidden hidden mt-4 px-4 space-y-2 text-white font-medium">
+    <a href="index.html" class="block hover:text-gray-300">Home</a>
+    <details>
+      <summary class="cursor-pointer hover:text-gray-300">Medicine Types</summary>
+      <ul class="ml-4 mt-2 space-y-1 text-white">
+        <li><a href="tablet.html" class="hover:text-gray-300">Tablet</a></li>
+        <li><a href="capsule.html" class="hover:text-gray-300">Capsule</a></li>
+        <li><a href="syrup.html" class="hover:text-gray-300">Syrup / Fluid</a></li>
+        <li><a href="ointment.html" class="hover:text-gray-300">Cream / Ointment</a></li>
+        <li><a href="vitamins.html" class="hover:text-gray-300">Vitamins</a></li>
+      </ul>
+    </details>
+    <a href="brands.html" class="block hover:text-gray-300">Brands</a>
+    <a href="contact.html" class="block hover:text-gray-300">Contact</a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="bg-red-50 py-16 px-4 text-center">
+  <h1 class="text-4xl md:text-5xl font-bold text-red-700 mb-4">Trusted Brands We Carry</h1>
+  <p class="text-lg text-gray-700 max-w-2xl mx-auto">We partner with well-established and FDA-approved pharmaceutical brands to ensure you receive only safe and effective medications.</p>
+</section>
+
+<!-- Brands Grid -->
+<section class="max-w-6xl mx-auto px-4 py-12">
+  <h2 class="text-2xl font-bold text-gray-800 mb-8 text-center">Featured Brands</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    <div class="bg-white border rounded-lg shadow p-5 text-center">
+      <img src="unilab.png" alt="Unilab" class="h-16 mx-auto mb-4" />
+      <h3 class="text-lg font-semibold text-red-700">Unilab</h3>
+      <p class="text-sm text-gray-600">A leading local brand offering a wide range of OTC and prescription medicines.</p>
+    </div>
+    <div class="bg-white border rounded-lg shadow p-5 text-center">
+      <img src="gsk.jpg" alt="GSK" class="h-16 mx-auto mb-4" />
+      <h3 class="text-lg font-semibold text-red-700">GlaxoSmithKline</h3>
+      <p class="text-sm text-gray-600">Global pharmaceutical giant known for vaccines, pain relief, and respiratory care.</p>
+    </div>
+    <div class="bg-white border rounded-lg shadow p-5 text-center">
+      <img src="fizer.jpg" alt="Pfizer" class="h-16 mx-auto mb-4" />
+      <h3 class="text-lg font-semibold text-red-700">Pfizer</h3>
+      <p class="text-sm text-gray-600">World-renowned company for innovation in medicine, including cardiovascular and vaccines.</p>
+    </div>
+    <div class="bg-white border rounded-lg shadow p-5 text-center">
+      <img src="merck.png" alt="Merck" class="h-16 mx-auto mb-4" />
+      <h3 class="text-lg font-semibold text-red-700">Merck</h3>
+      <p class="text-sm text-gray-600">Focused on improving human health through science-based solutions and treatments.</p>
+    </div>
+    <div class="bg-white border rounded-lg shadow p-5 text-center">
+      <img src="sanofi.png" alt="Sanofi" class="h-16 mx-auto mb-4" />
+      <h3 class="text-lg font-semibold text-red-700">Sanofi</h3>
+      <p class="text-sm text-gray-600">Committed to making a difference with diabetes care, vaccines, and rare disease treatment.</p>
+    </div>
+    <div class="bg-white border rounded-lg shadow p-5 text-center">
+      <img src="abbott.png" alt="Abbott" class="h-16 mx-auto mb-4" />
+      <h3 class="text-lg font-semibold text-red-700">Abbott</h3>
+      <p class="text-sm text-gray-600">Innovative healthcare solutions for diagnostics, nutrition, and branded pharmaceuticals.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-red-700 text-white text-center py-4 mt-10">
+  &copy; 2025 Mercury Pharmacy. All rights reserved.
+</footer>
+
+<script>
+  // Mobile menu toggle
+  document.getElementById("menu-toggle").addEventListener("click", () => {
+    document.getElementById("mobile-menu").classList.toggle("hidden");
+  });
+
+  // Dropdown toggle
+  const medToggle = document.getElementById("medicine-toggle");
+  const medDropdown = document.getElementById("medicine-dropdown");
+  let dropdownVisible = false;
+
+  medToggle.addEventListener("click", (e) => {
+    e.preventDefault();
+    dropdownVisible = !dropdownVisible;
+    medDropdown.classList.toggle("hidden", !dropdownVisible);
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!medToggle.contains(e.target) && !medDropdown.contains(e.target)) {
+      medDropdown.classList.add("hidden");
+      dropdownVisible = false;
+    }
+  });
+</script>
+
+</body>
+</html>

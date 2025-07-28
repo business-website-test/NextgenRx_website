@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mercury Drug Style Navbar</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+</head>
+<body class="bg-white">
+
+<!-- Navbar -->
+<nav class="bg-red-700 text-white px-4 py-3 shadow-md">
+  <div class="flex items-center justify-between max-w-7.5xl">
+
+    <!-- Logo moved fully to the left -->
+    <div class="flex-shrink-0 bg-white rounded w-36 h-16 flex items-center justify-center">
+      <img src="nextgen.png" alt="Mercury Drug Logo" class="h-20 w-auto" />
+    </div>
+
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex items-center space-x-6 font-medium relative">
+        <li><a href="index.html" class="hover:text-red-500 transition">Home</a></li>
+
+        <!-- Hover + Click Dropdown -->
+        <li class="relative group">
+          <button id="medicine-toggle" class="hover:text-red-500 transition flex items-center">
+            Medicine Types
+            <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <!-- Dropdown -->
+          <ul id="medicine-dropdown" class="absolute top-full left-0 mt-2 w-48 bg-white text-red-700 rounded-md shadow-md hidden group-hover:block z-10">
+            <li><a href="tablet.html" class="block px-4 py-2 hover:bg-gray-100">Tablet</a></li>
+            <li><a href="capsule.html" class="block px-4 py-2 hover:bg-gray-100">Capsule</a></li>
+            <li><a href="syrup.html" class="block px-4 py-2 hover:bg-gray-100">Syrup / Fluid</a></li>
+            <li><a href="ointment.html" class="block px-4 py-2 hover:bg-gray-100">Cream / Ointment</a></li>
+            <li><a href="vitamins.html" class="block px-4 py-2 hover:bg-gray-100">Vitamins</a></li>
+          </ul>
+        </li>
+
+        <li><a href="brands.html" class="hover:text-red-500 transition">Brands</a></li>
+        <li><a href="contact.html" class="hover:text-red-500 transition">Contact</a></li>
+      </ul>
+
+ <!-- Mobile Menu Toggle -->
+    <div class="md:hidden">
+      <button id="menu-toggle" class="focus:outline-none">
+        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </div>
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="md:hidden hidden mt-4 px-4 space-y-2 text-white font-medium">
+    <a href="index.html" class="block hover:text-gray-300">Home</a>
+    <details>
+      <summary class="cursor-pointer hover:text-gray-300">Medicine Types</summary>
+      <ul class="ml-4 mt-2 space-y-1 text-white">
+        <li><a href="tablet.html" class="hover:text-gray-300">Tablet</a></li>
+        <li><a href="capsule.html" class="hover:text-gray-300">Capsule</a></li>
+        <li><a href="syrup.html" class="hover:text-gray-300">Syrup / Fluid</a></li>
+        <li><a href="ointment.html" class="hover:text-gray-300">Cream / Ointment</a></li>
+        <li><a href="vitamins.html" class="hover:text-gray-300">Vitamins</a></li>
+      </ul>
+    </details>
+    <a href="brands.html" class="block hover:text-gray-300">Brands</a>
+    <a href="contact.html" class="block hover:text-gray-300">Contact</a>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="bg-white-500 text-black py-16">
+  <div class="max-w-7xl mx-auto px-4 text-center">
+    <h1 class="text-4xl md:text-5xl font-semibold mb-4">Welcome to NextGen Rx</h1>
+    <p class="text-lg md:text-xl font-light">
+      Your trusted partner in accessible, affordable, and high-quality healthcare products across the Philippines.
+    </p>
+  </div>
+</section>
+
+<!-- About Section -->
+<section class="py-12 bg-white text-gray-800">
+  <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <h2 class="text-3xl font-semibold mb-4 text-red-600">Why Choose NextGen Rx?</h2>
+      <p class="text-gray-700 text-lg leading-relaxed">
+        At NextGen Rx, we are committed to delivering genuine and affordable medicines to Filipino families. From prescription drugs to over-the-counter remedies and daily health essentials, our pharmacies are stocked with trusted brands and generics.
+      </p>
+      <ul class="mt-6 space-y-2 text-gray-700">
+        <li>✔️ Licensed Pharmacists at Every Branch</li>
+        <li>✔️ FDA-Approved Products Only</li>
+        <li>✔️ Convenient Locations Nationwide</li>
+        <li>✔️ HMO & Senior Citizen Discounts Accepted</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- Featured Medicine Types -->
+<section class="bg-gray-50 py-12">
+  <div class="max-w-7xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-semibold text-red-600 mb-6">Explore Our Categories</h2>
+    <div class="grid gap-6 md:grid-cols-3">
+      <a href="tablet.html" class="bg-white shadow-md p-6 rounded-lg hover:shadow-lg transition">
+        <img src="tablet.jpg" alt="Tablet" class="h-24 mx-auto mb-4" />
+        <h3 class="text-xl font-semibold mb-2">Tablets</h3>
+        <p class="text-gray-600 text-sm">Pain relief, maintenance drugs, antibiotics, and more.</p>
+      </a>
+      <a href="syrup.html" class="bg-white shadow-md p-6 rounded-lg hover:shadow-lg transition">
+        <img src="syrup1.jpg" alt="Syrup" class="h-24 mx-auto mb-4" />
+        <h3 class="text-xl font-semibold mb-2">Syrups / Fluids</h3>
+        <p class="text-gray-600 text-sm">Ideal for children and those with swallowing difficulties.</p>
+      </a>
+      <a href="vitamins.html" class="bg-white shadow-md p-6 rounded-lg hover:shadow-lg transition">
+        <img src="vitamin3.jpg" alt="Vitamins" class="h-24 mx-auto mb-4" />
+        <h3 class="text-xl font-semibold mb-2">Vitamins</h3>
+        <p class="text-gray-600 text-sm">Boost your immunity and overall well-being with trusted supplements.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="bg-red-700 text-white text-center py-4 mt-10">
+  &copy; 2025 NextGen Rx. All rights reserved.
+</footer>
+
+<script>
+  // Mobile menu toggle
+  document.getElementById("menu-toggle").addEventListener("click", () => {
+    document.getElementById("mobile-menu").classList.toggle("hidden");
+  });
+
+  // Dropdown toggle
+  const medToggle = document.getElementById("medicine-toggle");
+  const medDropdown = document.getElementById("medicine-dropdown");
+  let dropdownVisible = false;
+
+  medToggle.addEventListener("click", (e) => {
+    e.preventDefault();
+    dropdownVisible = !dropdownVisible;
+    medDropdown.classList.toggle("hidden", !dropdownVisible);
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!medToggle.contains(e.target) && !medDropdown.contains(e.target)) {
+      medDropdown.classList.add("hidden");
+      dropdownVisible = false;
+    }
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cream / Ointment Medicines</title>
+   <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<body class="bg-white">
+
+<!-- Navbar -->
+<nav class="bg-red-700 text-white px-4 py-3 shadow-md">
+  <div class="flex items-center justify-between max-w-7.5xl">
+
+    <!-- Logo moved fully to the left -->
+    <div class="flex-shrink-0 bg-white rounded w-36 h-16 flex items-center justify-center">
+      <img src="nextgen.png" alt="Mercury Drug Logo" class="h-20 w-auto" />
+    </div>
+      <ul class="hidden md:flex items-center space-x-6 font-medium relative">
+        <li><a href="#" class="hover:text-gray-200 transition">Home</a></li>
+        <li class="relative group">
+          <button id="medicine-toggle" class="hover:text-gray-200 transition flex items-center">
+            Medicine Types
+            <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <ul id="medicine-dropdown" class="absolute top-full left-0 mt-2 w-56 bg-white text-red-700 rounded-md shadow-md hidden group-hover:block z-20">
+            <li><a href="tablet.html" class="block px-4 py-2 hover:bg-gray-100">Tablet</a></li>
+            <li><a href="capsule.html" class="block px-4 py-2 hover:bg-gray-100">Capsule</a></li>
+            <li><a href="syrup.html" class="block px-4 py-2 hover:bg-gray-100">Syrup / Fluid</a></li>
+            <li><a href="ointment.html" class="block px-4 py-2 hover:bg-gray-100">Cream / Ointment</a></li>
+            <li><a href="vitamins.html" class="block px-4 py-2 hover:bg-gray-100">Vitamins</a></li>
+          </ul>
+        </li>
+        <li><a href="brands.html" class="hover:text-gray-200 transition">Brands</a></li>
+        <li><a href="contact.html" class="hover:text-gray-200 transition">Contact</a></li>
+      </ul>
+      <div class="md:hidden">
+        <button id="menu-toggle" class="focus:outline-none">
+          <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden mt-4 px-4 space-y-2 text-white font-medium">
+      <a href="index.html" class="block hover:text-gray-300">Home</a>
+      <details>
+        <summary class="cursor-pointer hover:text-gray-300">Medicine Types</summary>
+        <ul class="ml-4 mt-2 space-y-1 text-white">
+          <li><a href="tablet.html" class="hover:text-gray-300">Tablet</a></li>
+          <li><a href="capsule.html" class="hover:text-gray-300">Capsule</a></li>
+          <li><a href="syrup.html" class="hover:text-gray-300">Syrup / Fluid</a></li>
+          <li><a href="ointment.html" class="hover:text-gray-300">Cream / Ointment</a></li>
+          <li><a href="vitamins.html" class="hover:text-gray-300">Vitamins</a></li>
+        </ul>
+      </details>
+      <a href="brands.html" class="block hover:text-gray-300">Brands</a>
+      <a href="contact.html" class="block hover:text-gray-300">Contact</a>
+    </div>
+  </nav>
+
+  <section class="max-w-7xl mx-auto p-6">
+    <h2 class="text-2xl font-bold text-red-700 mb-6">Cream / Ointment Medicines</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div class="bg-white border rounded-xl shadow p-4 flex flex-col items-center text-center">
+        <img src="ointment1.jpg" alt="Katinko Ointment" class="w-[150px] h-[150px] object-contain mb-4 rounded">
+        <h3 class="text-lg font-semibold text-gray-800 mb-2">Katinko Ointment</h3>
+        <p class="text-sm text-gray-600 min-h-[48px]">For muscle pain, joint pain, insect bites, and itching relief.</p>
+      </div>
+
+      <div class="bg-white border rounded-xl shadow p-4 flex flex-col items-center text-center">
+        <img src="ointment2.jpg" alt="Tiger Balm" class="w-[150px] h-[150px] object-contain mb-4 rounded">
+        <h3 class="text-lg font-semibold text-gray-800 mb-2">Tiger Balm</h3>
+        <p class="text-sm text-gray-600 min-h-[48px]">Soothing balm for headaches, congestion, and muscular aches.</p>
+      </div>
+
+      <div class="bg-white border rounded-xl shadow p-4 flex flex-col items-center text-center">
+        <img src="ointment3.jpg" alt="Dermovate Cream" class="w-[150px] h-[150px] object-contain mb-4 rounded">
+        <h3 class="text-lg font-semibold text-gray-800 mb-2">Dermovate Cream</h3>
+        <p class="text-sm text-gray-600 min-h-[48px]">For eczema, dermatitis, and other skin inflammations.</p>
+      </div>
+
+      <div class="bg-white border rounded-xl shadow p-4 flex flex-col items-center text-center">
+        <img src="ointment4.jpg" alt="Fucidin Cream" class="w-[150px] h-[150px] object-contain mb-4 rounded">
+        <h3 class="text-lg font-semibold text-gray-800 mb-2">Fucidin Cream</h3>
+        <p class="text-sm text-gray-600 min-h-[48px]">Topical antibiotic for skin infections like impetigo and boils.</p>
+      </div>
+
+      <div class="bg-white border rounded-xl shadow p-4 flex flex-col items-center text-center">
+        <img src="ointment5.jpg" alt="Apollo Sebo de Macho" class="w-[150px] h-[150px] object-contain mb-4 rounded">
+        <h3 class="text-lg font-semibold text-gray-800 mb-2">Apollo Sebo de Macho</h3>
+        <p class="text-sm text-gray-600 min-h-[48px]">Prevents the appearance of scars from minor cuts and wounds.</p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.getElementById("menu-toggle").addEventListener("click", () => {
+      document.getElementById("mobile-menu").classList.toggle("hidden");
+    });
+
+    const medToggle = document.getElementById("medicine-toggle");
+    const medDropdown = document.getElementById("medicine-dropdown");
+
+    let dropdownVisible = false;
+
+    medToggle.addEventListener("click", (e) => {
+      e.preventDefault();
+      dropdownVisible = !dropdownVisible;
+      medDropdown.classList.toggle("hidden", !dropdownVisible);
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!medToggle.contains(e.target) && !medDropdown.contains(e.target)) {
+        medDropdown.classList.add("hidden");
+        dropdownVisible = false;
+      }
+    });
+  </script>
+
+</body>
+</html>
